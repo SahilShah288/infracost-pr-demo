@@ -17,10 +17,10 @@ provider "aws" {
 
 resource "aws_instance" "web_server" {
   ami           = "ami-005e54dee72cc1d00"
-  instance_type = "t3.micro"
+  instance_type = "t3.xlarge"
 
   root_block_device {
-    volume_size = 50
+    volume_size = 200
     volume_type = "gp3"
   }
 
